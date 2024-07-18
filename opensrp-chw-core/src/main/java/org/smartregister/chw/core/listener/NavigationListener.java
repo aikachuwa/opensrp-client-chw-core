@@ -140,6 +140,11 @@ public class NavigationListener implements View.OnClickListener {
                 case CoreConstants.DrawerMenu.ADDO_LINKAGE:
                     startRegisterActivity(getActivity(CoreConstants.REGISTERED_ACTIVITIES.ADDO_LINKAGE_ACTIVITY));
                     break;
+                case CoreConstants.DrawerMenu.GE:
+                    startRegisterActivity(getActivity(CoreConstants.REGISTERED_ACTIVITIES.GE_REGISTER_ACTIVITY));
+                    break;
+                case CoreConstants.DrawerMenu.NCD:
+                    startRegisterActivity(getActivity(CoreConstants.REGISTERED_ACTIVITIES.NCD_REGISTER_ACTIVITY));
                 default:
                     Utils.showShortToast(activity.getApplicationContext(), "Unspecified navigation action");
                     break;
